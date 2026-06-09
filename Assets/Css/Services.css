@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("../Img/CoolerBeach.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:white;
+}
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(120, 120, 120, 0.25);
+    z-index:-1;
+}
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 260px;
+    margin-left: 20px;
+}
+.logo {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: linear-gradient(
+        to bottom,
+        rgb(77, 107, 149),
+        rgb(45, 73, 112)
+    );
+    border-radius: 0 0 20px 20px;
+}
+
+.logo h2 {
+    color: white;
+    font-size: 70px;
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(
+        to bottom,
+        rgb(77, 107, 149),
+        rgb(45, 73, 112)
+    );
+    padding: 10px 0;
+    border-radius: 20px;
+    color: white;
+}
+.nav-links a{
+    color: white;
+}
+.texto {
+    background: linear-gradient(
+        to bottom,
+        rgb(77, 107, 149),
+        rgb(45, 73, 112)
+    );
+    width: 95%;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px auto;
+    color : rgb(255, 255, 255);
+    font-size: 18px;
+    text-align: justify;
+}
+.texto .servicos {
+    justify-self: center;
+    padding-bottom: 15px;
+}
+.texto .lugares {
+    
+    padding-top: 15px;
+}
