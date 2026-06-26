@@ -139,3 +139,30 @@ body::before{
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
 }
+.parasol{
+    width: 500px;
+    height: fit-content;
+}
+
+.guia{  
+    display: flex;
+    align-items: column;
+    background: linear-gradient(
+        to bottom,
+        rgb(77, 107, 149),
+        rgb(45, 73, 112)
+    );
+    border-radius: 20px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}
+
+.guia a{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
