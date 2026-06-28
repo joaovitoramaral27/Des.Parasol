@@ -136,7 +136,7 @@ body::before{
     padding: 10px;
     border: none;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 20px;
 }
 .Formulario label {
     font-family: 'Quicksand', sans-serif;

@@ -19,3 +19,21 @@ document.getElementById("formulario").addEventListener("submit", function(e){
         console.error(err);
     });
 });
+
+const telefone = document.getElementById("number");
+
+telefone.addEventListener("input", function () {
+    let valor = telefone.value.replace(/\D/g, ""); // Remove tudo que não for número
+
+    if (valor.length > 11) valor = valor.slice(0, 11);
+
+    if (valor.length > 2) {
+    valor = "(" + valor.substring(0, 2) + ") " + valor.substring(2);
+    }
+
+    if (valor.length > 10) {
+    valor = valor.substring(0, 10) + "-" + valor.substring(10);
+    }
+
+    telefone.value = valor;
+});
