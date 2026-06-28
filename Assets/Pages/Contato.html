@@ -17,15 +17,13 @@
             </div>
             <ul class="nav-links">
                 <li><a href="../../index.html">Home</a></li>
-                <li><a href="../Pages/Destinos.html">Destinos</a></li>
-                <li><a href="../Pages/Services.html">Serviços</a></li>
-                <li><a href="../Pages/Contato.html">Contato</a></li>
                 <li><a href="../Pages/SobreNos.html">Sobre Nós</a></li>
+                <li><a href="../Pages/Contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
     <div class ="container">
-    <div class="texto">
+        <div class="texto">
         <h1 class="contato">Entre em Contato Conosco</h1>
         <p><strong>Você pode nos contatar através dos seguintes canais:</strong></p>
         <ul>
@@ -33,12 +31,26 @@
             <li><strong>Telefone:</strong> (xx) xxxx-xxxx</li>
             <li><strong>Endereço:</strong> Rua Paralamas xxx - Do Sucesso/PS</li>
         </ul>
-    </div>
-    <div class="qrcode">
-        <h1 class="qrcode-title">Nosso QR Code de Contato</h1>
-        <p>Escaneie o QR Code abaixo para acessar nossa linha de contato exclusiva</p>
-        <img src="../Img/QrCode.jpg" alt="QR Code Parasol" class="qrcode-image">
-    </div>
-    </div>
+        </div>
+        <div class ="formulario">
+            <h1 class="contato">Envie uma Mensagem</h1>
+            <form class="formulario-preenchivel">
+                <label for="tipo">Categoria:</label>
+                <select id="tipo" name="tipo">
+                    <option>Sugestão</option>
+                    <option>Reclamação</option>
+                    <option>Avaliação</option>
+                    <option>Outro</option>
+                </select>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
 </body>
 </html>
